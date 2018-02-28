@@ -1,6 +1,6 @@
 <h1>{l s='Mon formulaire santé' mod='modulesante'}</h1>
 {if isset($success)}
-  <p class="success">{$success} update</p>
+  <p class="success">{$success}</p>
 {/if}
 <form action="{$link->getModuleLink('modulesante', 'formulaire')|escape:'html'}" method="post">
   <p>

@@ -92,7 +92,7 @@ class modulesanteFormulaireModuleFrontController extends ModuleFrontController
         if (!Db::getInstance()->execute($sql))
           die('Error etc.');
       }
-      $this->context->smarty->assign( 'success', 'Success! '.$nom );
+      $this->context->smarty->assign( 'success', 'Formulaire enregistré avec succès : '.$nom );
     }
     elseif (Tools::isSubmit('submit_update_modulesante')) {
       $poids = Tools::getValue('poids');
@@ -136,7 +136,7 @@ class modulesanteFormulaireModuleFrontController extends ModuleFrontController
         if (!Db::getInstance()->execute($sql))
           die('Error etc.');
       }
-      $this->context->smarty->assign( 'success', 'Success! teaze' );
+      $this->context->smarty->assign( 'success', 'Formulaire modifié avec succès' );
     }
     // $this->_displayContent($message);
       // $this->send_message('Tesst apres submit', 'test message');

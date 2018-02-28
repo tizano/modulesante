@@ -111,6 +111,10 @@ class ModuleSante extends Module
       return $this->display(__FILE__, 'views/templates/hook/linkform.tpl');
     }
 
+    // public function hookDisplayHeader($params) {
+    //   $this->context->controller->addCSS();
+    // }
+
     private function _displayMsContent()
     {
       $client = $this->context->customer;
